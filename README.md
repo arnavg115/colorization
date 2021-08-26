@@ -1,5 +1,9 @@
-<!--<h3><b>Colorful Image Colorization</b></h3>-->
+## RZ-Colorization package
+
+This code is all written by Richard Zhang et al. and it uses pytorch for its colorization. Note: all of the code is licensed under the BSD2 license and its terms apply. I have made minor changes to the repo like the requirements.txt and have future plans to add a few features. The neural network has not been edited in any way and it is the original from <a href="https://github.com/richzhang/colorization">Richard's repo</a>.
+
 ## <b>Colorful Image Colorization</b> [[Project Page]](http://richzhang.github.io/colorization/) <br>
+
 [Richard Zhang](https://richzhang.github.io/), [Phillip Isola](http://web.mit.edu/phillipi/), [Alexei A. Efros](http://www.eecs.berkeley.edu/~efros/). In [ECCV, 2016](http://arxiv.org/pdf/1603.08511.pdf).
 
 **+ automatic colorization functionality for Real-Time User-Guided Image Colorization with Learned Deep Priors, SIGGRAPH 2017!**
@@ -7,19 +11,6 @@
 **[Sept20 Update]** Since it has been 3-4 years, I converted this repo to support minimal test-time usage in PyTorch. I also added our SIGGRAPH 2017 (it's an interactive method but can also do automatic). See the [Caffe branch](https://github.com/richzhang/colorization/tree/caffe) for the original release.
 
 ![Teaser Image](http://richzhang.github.io/colorization/resources/images/teaser4.jpg)
-
-**Clone the repository; install dependencies**
-
-```
-git clone https://github.com/richzhang/colorization.git
-pip install requirements.txt
-```
-
-**Colorize!** This script will colorize an image. The results should match the images in the `imgs_out` folder.
-
-```
-python demo_release.py -i imgs/ansel_adams3.jpg
-```
 
 **Model loading in Python** The following loads pretrained colorizers. See [demo_release.py](demo_release.py) for some details on how to run the model. There are some pre and post-processing steps: convert to Lab space, resize to 256x256, colorize, and concatenate to the original full resolution, and convert to RGB.
 
@@ -33,7 +24,7 @@ colorizer_siggraph17 = colorizers.siggraph17().eval()
 
 The original implementation contained train and testing, our network and AlexNet (for representation learning tests), as well as representation learning tests. It is in Caffe and is no longer supported. Please see the [caffe](https://github.com/richzhang/colorization/tree/caffe) branch for it.
 
-### Citation ###
+### Citation
 
 If you find these models useful for your resesarch, please cite with these bibtexs.
 
@@ -56,5 +47,6 @@ If you find these models useful for your resesarch, please cite with these bibte
 }
 ```
 
-### Misc ###
+### Misc
+
 Contact Richard Zhang at rich.zhang at eecs.berkeley.edu for any questions or comments.
