@@ -6,7 +6,7 @@ README = (HERE / "README.md").read_text()
 
 setup(
     name="rz-colorization",
-    version="1.0.2",
+    version="1.0.3",
     description="Rich Zhang's colorization model in the form of an easy to use python package.",
     long_description=README,
     long_description_content_type="text/markdown",
