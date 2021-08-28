@@ -1,6 +1,6 @@
 ## RZ-Colorization package
 
-This code is all written by Richard Zhang et al. and it uses pytorch for its colorization. Note: all of the code is licensed under the BSD2 license and its terms apply. I have made minor changes to the repo like the requirements.txt and have future plans to add a few features. The neural network has not been edited in any way and it is the original from <a href="https://github.com/richzhang/colorization">Richard's repo</a>.
+This code is all written by Richard Zhang et al. and it uses pytorch for its colorization. Note: all of the code is licensed under the BSD2 license and its terms apply. I have made minor changes to the repo like the requirements.txt and have future plans to add a few features. The neural network has not been edited in any way and it is the original from <a href="https://github.com/richzhang/colorization">Richard's repo</a>. 
 
 ## <b>Colorful Image Colorization</b> [[Project Page]](http://richzhang.github.io/colorization/) <br>
 
@@ -47,6 +47,6 @@ If you find these models useful for your resesarch, please cite with these bibte
 }
 ```
 
-### Misc
+### Misc and other
 
 Contact Richard Zhang at rich.zhang at eecs.berkeley.edu for any questions or comments.
