@@ -2,6 +2,16 @@
 
 This code is all written by Richard Zhang et al. and it uses pytorch for its colorization. Note: all of the code is licensed under the BSD2 license and its terms apply. I have made minor changes to the repo like the requirements.txt and have future plans to add a few features. The neural network has not been edited in any way and it is the original from <a href="https://github.com/richzhang/colorization">Richard's repo</a>. 
 
+## Example
+```python
+from colorizers import pipeline
+import matplotlib.pyplot as plt
+import cv2
+res = pipeline("bg.jpg")
+plt.imshow(res)
+cv2.imwrite("color.jpg")
+```
+
 ## <b>Colorful Image Colorization</b> [[Project Page]](http://richzhang.github.io/colorization/) <br>
 
 [Richard Zhang](https://richzhang.github.io/), [Phillip Isola](http://web.mit.edu/phillipi/), [Alexei A. Efros](http://www.eecs.berkeley.edu/~efros/). In [ECCV, 2016](http://arxiv.org/pdf/1603.08511.pdf).
